@@ -26,9 +26,11 @@
     color: var(--primary-text-color);
 }
 .container {
-    width: 1170px;
-    height: 200px;
-    background-color: #ccc;
+    width: 1200px;
+    padding-left: 15;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Шапка */
 .list {
@@ -53,7 +55,27 @@
     font-family: inherit;
     color: var(--primary-white-color);
 }
+.logo-blue {
+    margin-right: 93px;
+}
+.logo {
+    display: inline-block;
+}
 
+.hader .container {
+    display: flex;
+    align-items: center;
+}
+.header.list {
+    display: flex;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+.contact.list {
+    display: flex;
+}
 /* Site nav */
 
 .header .link {
@@ -63,13 +85,15 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-.header {
-    
-}
+
 .link:hover,
 .link:focus {
     color: var(--accent-color); 
 }
+.header-connect {
+    margin-left: auto;
+}
+
 .header .link .list-current {
     color: var(--accent-color);
 }
@@ -81,12 +105,14 @@
     letter-spacing: 0.02em;
 }
 .contact-link {
-    
     color: var(--primary-text-color)
 }
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-color);
+}
+.tel {
+    margin-left: 50px;
 }
 
 .filter {
