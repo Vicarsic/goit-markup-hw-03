@@ -72,11 +72,11 @@
     outline: solid red;
 }
 .header.list {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.link list-current + .link {
+.link .list-current + .link {
     margin-left: 50px;
 }
 .site-nav {
