@@ -231,7 +231,13 @@
     margin-left: auto;
     margin-right: auto;
     height: 101px;
-
+}
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+}
+.feat-title {
+    width: ;
 }
 .feature .visually-hidden {
     position: absolute;
