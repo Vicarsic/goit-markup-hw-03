@@ -31,8 +31,9 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
 }
-/* Шапка */
+/* Header */
 .list {
     list-style: none;
 }
@@ -77,6 +78,9 @@
     align-items: center;
     left: 0px;
     top: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px;
     border-radius: 0px;
     outline: solid red;
     
@@ -123,6 +127,7 @@
 }
 .header-connect {
     margin-left: auto;
+    margin-right: 15px;
 }
 
 .header .link .list-current {
@@ -145,7 +150,7 @@
 .tel {
     margin-left: 50px;
 }
-
+/* Filter Portfolio */
 .filter {
     font-weight: 500;
     font-size: 16px;
@@ -172,7 +177,11 @@
 
 /* Герой */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     margin: 0;
+    outline: solid red;
 }
 .hero {
     font-size: 14px;
@@ -183,17 +192,16 @@
 }
 /* баг кольору */
 .hero-title {
+    margin: 0;
+    padding-bottom: 30px;
+}
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-}
-.main-hero {
-    padding: 200px 452px 280px 452px;;
-    text-align: center;
-    margin: 0;
 }
 .button {
     font-family: 'Roboto';
@@ -213,8 +221,18 @@
 .hero .button {
     display: inline-block;
     text-align: center;
+    margin: 0;
 }
 /* Преимущества */
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 101px;
+
+}
 .feature .visually-hidden {
     position: absolute;
     width: 1px;
@@ -229,8 +247,19 @@
 }
 .feature-list {
     display: flex;
-    padding: 0 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 15px;
+    margin: 0;
     outline: solid red;
+}
+.feature-title {
+    margin-top: 0;
+
+}
+.title {
+    padding-top: 94px;
+    padding-bottom: 10px;
 }
 .title {
     font-weight: 700;
