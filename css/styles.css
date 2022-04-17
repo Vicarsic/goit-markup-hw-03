@@ -55,9 +55,16 @@
     font-family: inherit;
     color: var(--primary-white-color);
 }
+.header.list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .logo-blue {
     padding-left: 15px;
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .logo {
     display: inline-block;
@@ -70,21 +77,31 @@
     top: 0px;
     border-radius: 0px;
     outline: solid red;
+    
 }
-.header.list {
+.nav-item +.nav-item {
+    margin-left: 50px;
+}
+
+.site-nav {
     display: flex;
+    align-items: center;
+}
+.link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 .link .list-current + .link {
     margin-left: 50px;
 }
-.site-nav {
-    display: flex;
-    align-items: center;
-}
+
 .contact.list {
     display: flex;
+}
+.contact .cont + .cont  {
+    display: block;
+    margin-left: 50px;
 }
 /* Site nav */
 
@@ -154,6 +171,7 @@
     font-size: 14px;
     letter-spacing: 0.06em;
     text-align: center;
+    Height 600px;
     background-color: var(--hero-bgd-color);
     color: var(--primary-white-color);
 }
@@ -165,6 +183,9 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+}
+.main-hero {
+    
 }
 .button {
     font-family: 'Roboto';
