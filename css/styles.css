@@ -56,6 +56,7 @@
     color: var(--primary-white-color);
 }
 .logo-blue {
+    padding-left: 15px;
     margin-right: 93px;
 }
 .logo {
@@ -65,9 +66,18 @@
 .hader .container {
     display: flex;
     align-items: center;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    outline: solid red;
 }
 .header.list {
-    display: flex;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.link list-current + .link {
+    margin-left: 50px;
 }
 .site-nav {
     display: flex;
