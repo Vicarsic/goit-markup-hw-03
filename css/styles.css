@@ -36,7 +36,9 @@
 .list {
     list-style: none;
 }
-.link {
+.link,
+.link-two,
+.link-down {
     text-decoration: none;
 }
 .logo-blue {
@@ -57,8 +59,8 @@
 }
 .header.list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .logo-blue {
     padding-left: 15px;
@@ -79,10 +81,12 @@
     outline: solid red;
     
 }
-.nav-item +.nav-item {
-    margin-left: 50px;
+.nav-item {
+    margin-right: 50px;
 }
-
+.nav-item:last-child {
+    margin-right: 0;
+}
 .site-nav {
     display: flex;
     align-items: center;
@@ -168,10 +172,12 @@
 
 /* Герой */
 .hero {
+    margin: 0;
+}
+.hero {
     font-size: 14px;
     letter-spacing: 0.06em;
     text-align: center;
-    Height 600px;
     background-color: var(--hero-bgd-color);
     color: var(--primary-white-color);
 }
@@ -185,7 +191,9 @@
     text-transform: uppercase;
 }
 .main-hero {
-    
+    padding: 200px 452px 280px 452px;;
+    text-align: center;
+    margin: 0;
 }
 .button {
     font-family: 'Roboto';
@@ -202,6 +210,10 @@
     border-radius: 4px;
     letter-spacing: 0.06em;
 }
+.hero .button {
+    display: inline-block;
+    text-align: center;
+}
 /* Преимущества */
 .feature .visually-hidden {
     position: absolute;
@@ -215,7 +227,11 @@
     clip: rect(0 0 0 0);
     owerflow: hidden;
 }
-
+.feature-list {
+    display: flex;
+    padding: 0 15px;
+    outline: solid red;
+}
 .title {
     font-weight: 700;
     font-size: 14px;
