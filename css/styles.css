@@ -168,6 +168,23 @@
 .buttons:focus {
     color: var(--accent-color);
 }
+.filter .list .but {
+    display: inline-block;
+    align-content: center;
+}
+.project.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.project .list > .pic {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+
 
 /* Герой */
 .hero {
@@ -217,18 +234,32 @@
     text-align: center;
     margin: 0;
 }
+.button:hover,
+.button:focus {
+    background-color: var(--primary-text-color) ;
+}
 /* Преимущества */
-.fit-container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.feature,
+.section {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    padding-top: 94px;
+    padding-bottom: 10px;
+}
+.first {
+
 }
 .feature {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 94px;
 }
 .feat-title {
     width: 270px;
@@ -273,30 +304,35 @@
     
 } 
 /* Чем занимаемся */
+.section {
+    padding-bottom: 94px;
+    outline: solid red;
+}
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
     color: var(--title-text-color);
 } 
-.wor-container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.section-title {
+    margin-top: 0;
+    padding-bottom: 50px;
+    text-align: center;
+       
 }
-.section {
+.container .section-title {
+    text-align: center;
+}
+.work-list {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: -30px;
+    outline: solid red;
 }
 .working {
-    width: 370px;
-    margin-right: 30px;
+    flex-basis: auto;
 }
-.working:nth-child(3n) {
-    margin-right: 0;
+.work-list .working:not(:last-child) {
+    margin-right: 30px;
 }
 .work-list {
     font-size: 14px;
@@ -318,12 +354,31 @@
 /* Наша команда */
 .section-team {
     background-color: var(--team-bgd-color);
+    outline: solid red;
 }
 .team-name {
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     
+}
+.team-name {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.staff {
+    width: 270px;
+    margin-right: 30px;
+    margin-left: 0;
+    outline: solid red;
+}
+.staff:nth-child(4n) {
+    margin-right: 0;
+}
+.our {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .name {
     font-weight: 500;
