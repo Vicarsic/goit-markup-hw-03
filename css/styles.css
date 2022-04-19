@@ -251,8 +251,6 @@ img {
     background-color: var(--hero-bgd-color);
     color: var(--primary-white-color);
 }
-
-
 .hero-title {
     font-weight: 900;
     font-size: 44px;
