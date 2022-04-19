@@ -173,30 +173,40 @@ img {
 .filter {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 56px;
+    font-size: 16px;
+    margin-bottom: 50px;
 }
-.but + .but {
-    margin-left: 52px;
+.filter .but + .but {
+    margin-left: 8px;
 }
 .filter .buttons-all {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    font-weight: 500;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
 }
 .filter .buttons {
     color: var(--title-text-color);
     cursor: pointer;
+    font-weight: 500;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
 }
-.buttons-all:hover,
-.buttons-all:focus {
-    color: var(--accent-color);
-}
-.buttons:hover,
-.buttons:focus {
-    color: var(--accent-color);
+.filter .buttons-all:hover,
+.filter .buttons-all:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
+.filter .buttons:hover,
+.filter .buttons:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}   
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -209,13 +219,23 @@ img {
     padding-right: 30px;
     padding-bottom: 30px;
 }
-.project > .pic {
-    flex-basis: calc(100% / 3 - 20px);
+.project.list .pic {
+    display: block;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+    border: 1px solid #eeeeee;
 }
-.pic:nth-child(3n) {
-    padding-right: 0;
+.project.list .pic:nth-child(3n) {
+    margin-right: 0;
 } 
-
+.project.list .pic:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+.cards {
+    padding: 20px 24px;
+}
 /* Герой */
 .hero {
     padding-top: 200px;
