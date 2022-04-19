@@ -76,7 +76,7 @@
 .hader .container {
     display: flex;
     align-items: center;
-    outline: solid red;
+    
     
 }
 .nav-item {
@@ -88,11 +88,10 @@
 .site-nav {
     display: flex;
     align-items: center;
+    padding-left: 15px;
 }
 .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .link .list-current + .link {
     margin-left: 50px;
@@ -151,6 +150,15 @@
     line-height: 1.62;
     letter-spacing: 0,03em;
 }
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 56px;
+}
+.but + .but {
+    margin-left: 52px;
+}
 .filter .buttons-all {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -168,23 +176,25 @@
 .buttons:focus {
     color: var(--accent-color);
 }
-.filter .list .but {
-    display: inline-block;
-    align-content: center;
-}
-.project.list {
+
+.project {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: 56px;
+    margin-bottom: 94px;
+    
 }
-.project .list > .pic {
+.pic {
+    width: 370px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.project > .pic {
     flex-basis: calc(100% / 3 - 20px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-
 }
-
+.pic:nth-child(3n) {
+    padding-right: 0;
+} 
 
 /* Герой */
 .hero {
@@ -192,7 +202,7 @@
     padding-bottom: 200px;
     text-align: center;
     margin: 0;
-    outline: solid red;
+    
 }
 .hero {
     font-size: 14px;
@@ -201,7 +211,7 @@
     background-color: var(--hero-bgd-color);
     color: var(--primary-white-color);
 }
-/* баг кольору */
+
 .hero-title {
     margin: 0;
     padding-bottom: 30px;
@@ -214,6 +224,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+/* Buttons */
+
 .button {
     font-family: 'Roboto';
     font-weight: 700;
@@ -239,6 +252,7 @@
     background-color: var(--primary-text-color) ;
 }
 /* Преимущества */
+
 .feature,
 .section {
     padding-top: 0;
@@ -249,12 +263,11 @@
 .second,
 .third,
 .fourth {
-    padding-top: 94px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-.first {
-
-}
+.first-item {
+    margin-top: 10px;
+    }
 .feature {
     display: flex;
     flex-wrap: wrap;
@@ -286,8 +299,7 @@
     padding-bottom: 0;
     padding: 0 15px;
     margin: 0;
-    outline: solid red;
-}
+}   
 .feature-title {
     margin-top: 0;
 }
@@ -306,7 +318,8 @@
 /* Чем занимаемся */
 .section {
     padding-bottom: 94px;
-    outline: solid red;
+    padding-top: 94px;
+    
 }
 .section-title {
     font-weight: 700;
@@ -318,7 +331,6 @@
     margin-top: 0;
     padding-bottom: 50px;
     text-align: center;
-       
 }
 .container .section-title {
     text-align: center;
@@ -326,7 +338,7 @@
 .work-list {
     display: flex;
     margin-left: -30px;
-    outline: solid red;
+    
 }
 .working {
     flex-basis: auto;
@@ -346,15 +358,26 @@
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
+.project-name {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
 .project-work {
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
 }
+.project-work {
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
 /* Наша команда */
 .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--team-bgd-color);
-    outline: solid red;
+    
 }
 .team-name {
     font-size: 16px;
@@ -371,14 +394,18 @@
     width: 270px;
     margin-right: 30px;
     margin-left: 0;
-    outline: solid red;
+    
 }
 .staff:nth-child(4n) {
     margin-right: 0;
 }
 .our {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.post {
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .name {
     font-weight: 500;
@@ -396,22 +423,43 @@
     background-color: var(--hero-bgd-color);
     font-size: 14px;
 }
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .address {
     font-style: normal;
-    
+}
+.address {
+    padding-left: 15px;
 }
 .city {
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-white-color);
 }
+.city {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
 .contact-item {
     font-size: 14px;
     line-height: 1.71;
     color: var(--contact-color);
 }
+.contact-item:not(:last-child) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.contact-item:last-child {
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
 .contact-item:hover,
 .contact-item:focus {
     color: var(--accent-color);
 }
-    
+.logo-down {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
